@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>NN API</title>
+</head>
+<body>
+ <div class="login">
+	<h1>Predict Bookings Checked In</h1>
+
+    <form action="{{ url_for('predict')}}" method="post">
+    	<input type="text" name="Unnamed: 0" placeholder="Unnamed: 0" required="required" />
+        <input type="text" name="ID" placeholder="ID" required="required" />
+		<input type="text" name="Nationality" placeholder="Nationality" required="required" />
+        <input type="text" name="Age" placeholder="Age" required="required" />
+        <input type="text" name="DaysSinceCreation" placeholder="DaysSinceCreation" required="required" />
+        <input type="text" name="AverageLeadTime" placeholder="AverageLeadTime" required="required" />
+        <input type="text" name="LodgingRevenue" placeholder="LodgingRevenue" required="required" />
+        <input type="text" name="OtherRevenue" placeholder="OtherRevenue" required="required" />
+        <input type="text" name="BookingsCanceled" placeholder="BookingsCanceled" required="required" />
+        <input type="text" name="BookingsNoShowed" placeholder="BookingsNoShowed" required="required" />
+        <input type="text" name="PersonsNights" placeholder="PersonsNights" required="required" />
+        <input type="text" name="RoomNights" placeholder="RoomNights" required="required" />
+        <input type="text" name="DaysSsinceLastStay" placeholder="DaysSinceLastStay" required="required" />
+        <input type="text" name="DaysSsinceFirstStay" placeholder="DaysSsinceFirstStay" required="required" />
+        <input type="text" name="DistributionChannel" placeholder="DistributionChannel" required="required" />
+        <input type="text" name="MarketSegment" placeholder="MarketSegment" required="required" />
+        <input type="text" name="SRHighFloor" placeholder="SRHighFloor" required="required" />
+        <input type="text" name="SRLowFloor" placeholder="SRLowFloor" required="required" />
+        <input type="text" name="SRAccessibleRoom" placeholder="SRAccessibleRoom" required="required" />
+        <input type="text" name="SRMediumFloor" placeholder="SRMediumFloor" required="required" />
+        <input type="text" name="SRBathtub" placeholder="SRBathtub" required="required" />
+        <input type="text" name="SRShower" placeholder="SRShower" required="required" />
+        <input type="text" name="SRCrib" placeholder="SRCrib" required="required" />
+        <input type="text" name="SRKingSizeBed" placeholder="SRKingSizeBed" required="required" />
+        <input type="text" name="SRTwinBed" placeholder="SRTwinBed" required="required" />
+        <input type="text" name="SRNearElevator" placeholder="SRNearElevator" required="required" />
+        <input type="text" name="SRAwayFromElevator" placeholder="SRAwayFromElevator" required="required" />
+        <input type="text" name="SRNoAlcoholInMiniBar" placeholder="SRNoAlcoholInMiniBar" required="required" />
+        <input type="text" name="SRQuietRoom" placeholder="SRQuietRoom" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+     
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+  <h2>Visualization</h2>
+  <img src="{{ url_for('visualize') }}">
+</body>
+</html>
