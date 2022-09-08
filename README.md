@@ -7,14 +7,19 @@ when I was working in text extraction in NLP I faced a problem in extracting the
 Backpropogation helps to fine tune the weights based on error rate and reduce the loss for every iteration of epoch. I used interpolate method to handle the 40% of null value.
 
 Prerequisites
+
 You must have Scikit Learn, Pandas, matplotlib, tensorflow (for Neural Network Model) and Flask (for API) installed.
 
 Project Structure
+
 This project has four major parts :
 
 1.model.py - This contains code fot our Machine Learning model to predict employee salaries absed on trainign data in 'train_data_evaluation_part_2.csv' file.
+
 2.app.py - This contains Flask APIs that receives Bookings CheckedIn details through GUI or API calls, computes the precited value based on our model and returns it.
+
 3.request.py - This uses requests module to call APIs already defined in app.py and dispalys the returned value.
+
 4.templates - This folder contains the HTML template to allow user to enter Customer booking detail and displays the predicted Bookings CheckedIn.
 
 Running the project
