@@ -19,7 +19,7 @@ This project has four major parts :
 
 1.Ensure that you are in the project home directory. Create the machine learning model by running below command -
 
-!python model.py
+[python.py]
 
 This would create a serialized version of our model into a file model.h5
 
