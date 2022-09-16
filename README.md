@@ -1,13 +1,10 @@
 # NN-implementation-using-flask
 Keras with Flask Implementation on the web
-# Neural Network Implentation using Flask
 
-Prerequisites
-
+# Prerequisites
 You must have Scikit Learn, Pandas, matplotlib, tensorflow (for Neural Network Model) and Flask (for API) installed.
 
-Project Structure
-
+# Project Structure
 This project has four major parts :
 
 1.model.py - This contains code fot our Machine Learning model to predict employee salaries absed on trainign data in 'train_data_evaluation_part_2.csv' file.
@@ -18,7 +15,7 @@ This project has four major parts :
 
 4.templates - This folder contains the HTML template to allow user to enter Customer booking detail and displays the predicted Bookings CheckedIn.
 
-Running the project
+# Running the project
 
 Ensure that you are in the project home directory. Create the machine learning model by running below command -
 
